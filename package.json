@@ -1,0 +1,23 @@
+{
+    "name": "hooked",
+    "private": true,
+    "packageManager": "^bun@1.2.10",
+    "workspaces": [],
+    "scripts": {
+        "dev": "turbo run dev",
+        "build": "turbo run build",
+        "lint": "turbo run lint",
+        "test": "turbo run test"
+    },
+    "devDependencies": {
+        "@types/bun": "^1.2.10",
+        "@types/node": "^22.14.1",
+        "eslint": "^9.24.0",
+        "prettier": "^3.5.3",
+        "ts-node": "^10.9.2",
+        "turbo": "^2.5.0",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+    },
+    "dependencies": {}
+}
