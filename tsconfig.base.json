@@ -12,8 +12,12 @@
         "isolatedModules": true,
         "noEmit": true,
         "jsx": "preserve",
+        "types": ["vite/client"],
         "baseUrl": ".",
-        "paths": {}
+        "paths": {
+            "@renderer/*": ["./platform/desktop/src/renderer/src"],
+            "@hooked/store/*": ["./packages/store/*"]
+        }
     },
     "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
     "exclude": ["node_modules", "dist", "build"]

@@ -2,22 +2,47 @@
     "name": "hooked",
     "private": true,
     "packageManager": "^bun@1.2.10",
-    "workspaces": [],
+    "workspaces": [
+        "platform/*",
+        "packages/*"
+    ],
+    "turbo": {
+        "root": "."
+    },
     "scripts": {
-        "dev": "turbo run dev",
-        "build": "turbo run build",
-        "lint": "turbo run lint",
-        "test": "turbo run test"
+        "dev": "dotenv -- turbo run dev",
+        "build": "dotenv -- turbo run build",
+        "lint": "dotenv -- turbo run lint",
+        "test": "dotenv -- turbo run test",
+        "desktop:dev": "turbo run desktop:dev",
+        "desktop:start": "turbo run desktop:start",
+        "desktop:build": "turbo run desktop:build",
+        "desktop:test": "turbo run desktop:test"
     },
     "devDependencies": {
         "@types/bun": "^1.2.10",
         "@types/node": "^22.14.1",
+        "@types/react": "^19.1.2",
+        "@types/react-dom": "^19.1.2",
+        "@vitejs/plugin-react": "^4.4.1",
+        "@vitejs/plugin-vue": "^5.2.3",
+        "dotenv-cli": "^8.0.0",
+        "electron": "^35.2.0",
+        "electron-builder": "^26.0.12",
+        "electron-vite": "^3.1.0",
         "eslint": "^9.24.0",
         "prettier": "^3.5.3",
         "ts-node": "^10.9.2",
         "turbo": "^2.5.0",
         "typescript": "^5.8.3",
+        "vite": "^6.3.2",
         "vitest": "^3.1.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@electron-toolkit/preload": "^3.0.1",
+        "@electron-toolkit/utils": "^4.0.0",
+        "dotenv": "^16.5.0",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0"
+    }
 }
