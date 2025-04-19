@@ -16,6 +16,8 @@
         "baseUrl": ".",
         "paths": {
             "@renderer/*": ["./platform/desktop/src/renderer/src"],
+            "@hooked/app-main/*": ["./apps/main/*"],
+            "@hooked/app-mobile/*": ["./apps/mmobile/*"],
             "@hooked/store/*": ["./packages/store/*"]
         }
     },

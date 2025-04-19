@@ -3,7 +3,7 @@
     "envMode": "loose",
     "tasks": {
         "dev": {
-            "cache": true,
+            "cache": false,
             "persistent": true,
             "dependsOn": ["^dev"],
             "outputs": []

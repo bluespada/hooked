@@ -16,7 +16,10 @@ export default {
     renderer: {
         resolve: {
             alias: {
-                '@renderer': path.resolve('src/renderer/src')
+                '@renderer': path.resolve(__dirname, 'src/renderer/src'),
+                '@hooked/app-main': path.resolve(__dirname, '../../apps/main'),
+                '@hooked/app-mobile': path.resolve(__dirname, '../../apps/mobile'),
+                '@hooked/store': path.resolve(__dirname, '../../packages/store')
             }
         },
         plugins: [

@@ -8,10 +8,6 @@
         ],
         "jsx": "react-jsx"
     },
-    "include": [
-        "src",
-        "electron"
-    ],
     "exclude": [
         "node_modules",
         "dist",

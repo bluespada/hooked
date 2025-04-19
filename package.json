@@ -41,6 +41,7 @@
     "dependencies": {
         "@electron-toolkit/preload": "^3.0.1",
         "@electron-toolkit/utils": "^4.0.0",
+        "@fontsource/roboto": "^5.2.5",
         "dotenv": "^16.5.0",
         "react": "^19.1.0",
         "react-dom": "^19.1.0"
