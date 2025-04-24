@@ -18,9 +18,15 @@
             "@renderer/*": ["./platform/desktop/src/renderer/src"],
             "@hooked/app-main/*": ["./apps/main/*"],
             "@hooked/app-mobile/*": ["./apps/mmobile/*"],
-            "@hooked/store/*": ["./packages/store/*"]
+            "@hooked/core/*": ["./packages/core/src/*"]
         }
     },
-    "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx",
+        "./platform/desktop/**/*.ts"
+    ],
     "exclude": ["node_modules", "dist", "build"]
 }

@@ -1,7 +1,0 @@
-{
-    "name": "store",
-    "description": "This monorepo to store all states management on this projects",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {}
-}

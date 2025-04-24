@@ -1,5 +1,7 @@
 import { type UserConfig, externalizeDepsPlugin } from 'electron-vite';
 import react from '@vitejs/plugin-react';
+// @ts-ignore
+import tailwindcss from '@tailwindcss/vite';
 import path from 'path';
 
 export default {
@@ -19,11 +21,12 @@ export default {
                 '@renderer': path.resolve(__dirname, 'src/renderer/src'),
                 '@hooked/app-main': path.resolve(__dirname, '../../apps/main'),
                 '@hooked/app-mobile': path.resolve(__dirname, '../../apps/mobile'),
-                '@hooked/store': path.resolve(__dirname, '../../packages/store')
+                '@hooked/*': path.resolve(__dirname, '../../packages/core/src')
             }
         },
         plugins: [
             react(),
+            tailwindcss(),
         ]
     }
 } satisfies UserConfig;

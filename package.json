@@ -20,6 +20,7 @@
         "desktop:test": "turbo run desktop:test"
     },
     "devDependencies": {
+        "@tailwindcss/vite": "^4.1.4",
         "@types/bun": "^1.2.10",
         "@types/node": "^22.14.1",
         "@types/react": "^19.1.2",
@@ -44,6 +45,7 @@
         "@fontsource/roboto": "^5.2.5",
         "dotenv": "^16.5.0",
         "react": "^19.1.0",
-        "react-dom": "^19.1.0"
+        "react-dom": "^19.1.0",
+        "tailwindcss": "^4.1.4"
     }
 }
